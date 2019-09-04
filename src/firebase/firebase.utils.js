@@ -11,6 +11,13 @@ const config = {
     messagingSenderId: "347842594002",
     appId: "1:347842594002:web:0fe12b788dadac6c"
   };
+
+  export const createUserProfileDocument = async (userAuth, additionalData) => {
+    if(!userAuth) return;
+
+    console.log(firestore.doc('users/124575125274'))
+  }
+
   firebase.initializeApp(config);
   
 export const auth = firebase.auth();
